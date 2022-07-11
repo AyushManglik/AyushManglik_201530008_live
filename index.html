@@ -7,8 +7,7 @@
     <title>TEMPLATE-1</title>
     <link rel="stylesheet" href="template.css">
 </head>
-<body  style="background :url('bgimage2.webp') no-repeat right;">
-    
+<body  style="background :url('bgimage2.png') no-repeat right;">    
     <header id="Header">
         <div id="logo">
             <img src="./LOGO.png" alt="LOGO" width="75px" height="75px">
@@ -35,13 +34,19 @@
         <h2> Services</h2>
         <p>The 3 golden rules professional graphic designer don't</p>
     </div>
-    <footer>
-        <ul>
-            <li><b>[Student name]</b></li>
-            <li><b>[University_Rllno]</b></li>
-            <li><b>[GLA University, Mathura]</b></li>
-            <li><b>[11-07-2022]</b></li>
-        </ul>
+    <footer class="center">
+        <div id="name"></div>
+        <div id="roll"></div>
+        <div id="college"></div>
+        <div id="date"></div>
     </footer>
+    <script>
+        document.getElementById("name").innerHTML = "Ayush Manglik"
+        document.getElementById("roll").innerHTML = "201530008"
+        document.getElementById("college").innerHTML = "GLA University, Mathura"
+        const today = new Date();
+        date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+        document.getElementById("date").innerHTML = date;
+    </script>
 </body>
 </html>
