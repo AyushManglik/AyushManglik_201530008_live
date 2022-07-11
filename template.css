@@ -84,6 +84,9 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
 }
+span{
+    color: rgb(255, 0, 98);
+}
 footer
 {
     width: 100%;
@@ -93,7 +96,7 @@ footer
     font-size: 24px;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 footer ul li 
@@ -101,7 +104,7 @@ footer ul li
     text-decoration: none;
     color: black ;
     padding: 20px 75px;
-}
+} 
 #sec-1 .box
 {
     width: 110px;
